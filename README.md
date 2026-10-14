@@ -1,20 +1,23 @@
 # COVID-19 Dashboard
 
-Small dashboard I threw together to practice Plotly/Streamlit with the Johns Hopkins COVID data.
+Interactive data analytics dashboard for COVID-19 metrics using Python, Plotly, and Pandas.
 
-Currently just a demo with sample data. The full version I had in mind would pull live numbers and do choropleth + time series, but I only got the basic layout working before moving on.
+Provides visualizations of confirmed cases, trends, and statistical summaries. Designed for exploratory analysis of pandemic data.
 
-## How to run
+## Tech Stack
+- Python
+- Plotly / Streamlit
+- Pandas
+
+## Setup and Run
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## What I actually finished
-- Page config and title
-- Button that loads a tiny sample dataframe
-- Bar chart of confirmed cases
+## Features
+- Dynamic charts for case counts
+- Sample data loading with extensible live data support
+- Clean layout for quick insights
 
-The data cleaning part was messier than I expected (lots of missing values and weird country names). Might come back to the map later.
-
-MSU data science project, late 2024 / early 2025.
+Built for real-time data exploration and visualization.
