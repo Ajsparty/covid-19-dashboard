@@ -1,16 +1,15 @@
-# COVID-19 Dashboard Demo (Plotly Dash / Streamlit placeholder)
-# Full version includes live data fetching and advanced visualizations
+# quick covid dashboard demo
+# still just sample data, haven't hooked up the real jhu csv yet
 
 import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="COVID-19 Analytics Dashboard", layout="wide")
-st.title("🌍 COVID-19 Global Analytics Dashboard")
-st.caption("Interactive visualization of pandemic trends | Demo Mode")
+st.title("COVID-19 Global Analytics Dashboard")
+st.caption("demo version")
 
-st.info("This is a functional demo. The full repository contains the complete Dash/Streamlit application with choropleth maps, time series, and statistical tools.")
+st.info("Sample data only for now. Real version would pull from the Johns Hopkins repo and do maps + time series.")
 
-# Simple demo
 if st.button("Load Sample Data"):
     df = pd.DataFrame({
         'Country': ['USA', 'India', 'Brazil', 'France', 'Germany'],
